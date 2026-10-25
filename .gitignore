@@ -1,0 +1,13 @@
+build/
+tools/
+compiler.local.txt
+tasks.tsv
+*.pdb
+*.ilk
+*.obj
+*.o
+
+.openai/
+.env
+.env.*
+.DS_Store
