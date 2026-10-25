@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#141c35">
+  <meta name="description" content="从一张任务卡片开始，用22章课程、内存演示和动手练习系统学习C语言。">
+  <title>C 语言任务工坊 · 可视化学习</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="labs.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">跳到学习内容</a>
+  <aside class="sidebar" id="sidebar" aria-label="主导航">
+    <a class="brand" href="#/overview" aria-label="C 语言任务工坊首页"><span class="brand-mark">C<span>_</span></span><span>任务工坊<small>LEARN C. BUILD SOMETHING.</small></span></a>
+    <div class="sidebar-label">你的学习空间</div>
+    <nav id="primary-nav">
+      <a href="#/overview" data-nav="overview"><span class="nav-icon" data-icon="grid"></span>学习总览</a>
+      <a href="#/course/1" data-nav="course"><span class="nav-icon" data-icon="book"></span>章节课程<span class="nav-count">22</span></a>
+      <a href="#/lab/pointer" data-nav="lab"><span class="nav-icon" data-icon="lab"></span>可视化实验<span class="live-dot"></span></a>
+      <a href="#/project" data-nav="project"><span class="nav-icon" data-icon="terminal"></span>项目实战</a>
+      <a href="#/exercises/01_temperature" data-nav="exercises"><span class="nav-icon" data-icon="code"></span>动手练习<span class="nav-count">6</span></a>
+      <a href="#/source" data-nav="source"><span class="nav-icon" data-icon="folder"></span>源码与工具</a>
+    </nav>
+    <div class="sidebar-label resources-label">随时查阅</div>
+    <nav class="resource-nav"><a href="#/doc/roadmap"><span class="nav-icon" data-icon="route"></span>知识地图</a><a href="#/doc/glossary"><span class="nav-icon" data-icon="search"></span>术语与常见误区</a></nav>
+    <div class="sidebar-bottom"><div class="progress-caption"><span>我的学习进度</span><strong id="side-progress">0 / 22</strong></div><div class="progress-track"><div id="side-progress-bar"></div></div><p>学会一个概念，就往前一步。</p><div class="local-status"><span></span><span id="storage-status">进度保存在当前浏览器</span></div></div>
+  </aside>
+  <div class="app-shell">
+    <header class="topbar"><div class="breadcrumb"><button class="icon-button mobile-menu" id="menu-toggle" aria-label="展开导航" aria-expanded="false" data-icon="menu"></button><span>学习空间</span><span class="crumb-divider">/</span><strong id="page-label">学习总览</strong></div><div class="header-actions"><div class="search-wrap"><span data-icon="search"></span><input id="global-search" type="search" placeholder="搜索章节或知识点" aria-label="搜索章节或知识点" autocomplete="off" aria-controls="search-results"><kbd>Ctrl K</kbd><div id="search-results" class="search-results" hidden></div></div><span class="version-badge">C17 · 中文课程</span><div class="profile-dot" aria-label="本地学习者">C</div></div></header>
+    <main id="main-content" tabindex="-1"></main>
+    <footer class="site-footer"><span>C 语言任务工坊<span class="footer-sep">·</span>把知识写进一个真实项目</span><span>核心 → 实验 → 项目 → 自测</span></footer>
+  </div>
+  <div id="toast" role="status" aria-live="polite" hidden></div>
+  <script src="data.js"></script>
+  <script src="labs.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
